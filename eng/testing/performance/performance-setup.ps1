@@ -126,7 +126,7 @@ if ($RunFromPerformanceRepo) {
     robocopy $SourceDirectory $PerformanceDirectory /E /XD $PayloadDirectory $SourceDirectory\artifacts $SourceDirectory\.git
 }
 else {
-    git clone --branch SODFailOnNoFiles --depth 1 --quiet https://github.com/LoopedBard3/performance $PerformanceDirectory
+    git clone --branch reboot-ios --depth 1 --quiet https://github.com/akoeplinger/performance $PerformanceDirectory
 }
 
 if($MonoDotnet -ne "")
